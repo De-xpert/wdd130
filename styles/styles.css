@@ -54,7 +54,10 @@ aside{
     text-align: center;
     position: relative;
 }
-
+aside img {
+width: 200px;
+height: auto;
+}
 aside h2{
     margin: 0.5rem 0 0.75rem;
     font-size: 1.25rem;

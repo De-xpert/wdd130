@@ -1,9 +1,9 @@
 /* Root Variables */
 :root {
-  --primary-color: #055a05; /* forest green */
-  --secondary-color: #f4a261; /* warm sand */
-  --accent1-color: #264653; /* dark slate blue */
-  --accent2-color: #e9c46a; /* light golden yellow */
+  --primary-color: #055a05;
+  --secondary-color: #f4a261;
+  --accent1-color: #264653;
+  --accent2-color: #e9c46a;
   --heading-font: "Times New Roman", "Georgia", serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
@@ -19,35 +19,68 @@
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
+  background-color: #fff;
 }
 
-/* Header */
+/* ---------- HEADER (logo on top, nav under it, with bullets) ---------- */
 header {
-  background-color: var(--primary-color);
-  color: var(--accent2-color);
-}
-
-/* Layout */
-header, main, footer {
+  background-color: white;
+  color: blue;
+  display: flex;
+  flex-direction: column;      /* logo on top, nav below */
+  align-items: flex-start;     /* left-align everything */
+  padding: 12px 20px;
+  border-bottom: 2px solid rgba(0, 0, 255, 0.12);
   width: 840px;
   margin: 0 auto;
 }
 
-/* Headings */
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+/* Logo */
+.logo {
+  margin-bottom: 10px;
 }
 
-/* General Spacing */
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+.logo img {
+  width: 120px;
+  height: auto;
+  background-color: white;
+  padding: 5px;
+  border-radius: 6px;
+  display: block;
 }
 
-/* Hero Section */
+/* Navigation (vertical with bullets) */
+nav {
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: disc;  /* shows bullets */
+  padding-left: 30px;     /* space between edge and bullets */
+  margin: 0;
+}
+
+nav ul li {
+  margin: 6px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: blue;             /* blue links */
+  font-weight: bold;
+  font-size: 1rem;
+  display: block;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- HERO ---------- */
 .hero {
   position: relative;
+  width: 840px;
+  margin: 20px auto 0;
 }
 
 .hero img {
@@ -55,43 +88,95 @@ nav, p, section, article {
   width: 100%;
   max-height: 400px;
   object-fit: cover;
-  margin: 0 auto;
 }
 
-/* Hero Heading */
-h1 {
+/* Shared style for hero text bars */
+.hero h1,
+.hero-bottom-text {
   position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
+  left: 2%;
+  width: 96%;
+  background-color: rgba(0, 102, 204, 0.75); /* deeper blue with less transparency */
+  color: white;
   text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #fff; /* white text for contrast */
+  padding: 8px 0;
+  margin: 0;
+  border-radius: 5px;
+  font-family: "Times New Roman", serif;
 }
 
-/* Hero Article Image */
-.hero article img {
-  float: right;
-  width: 125px;
+/* h1 (top bar) */
+.hero h1 {
+  top: 20px;
+  font-size: 1.5rem;
 }
 
-/* Social Media Icons */
+/* bottom text (near bottom of hero image) */
+.hero-bottom-text {
+  bottom: 15px;   /* smaller gap from bottom */
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* ---------- HEADINGS BELOW HERO ---------- */
+h2, h3 {
+  text-align: center;
+  width: 840px;
+  margin: 1cm auto 10px; /* 1cm below hero image, 10px bottom gap */
+  background-color: rgba(0, 102, 204, 0.75); /* darker semi-transparent blue */
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+  font-family: var(--heading-font);
+}
+
+/* ---------- MAIN / CONTENT ---------- */
+main {
+  width: 840px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+}
+
+h2, h3 {
+  color: white; /* make h2 and h3 text white */
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  width: 840px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 15px 0;
+  border-top: 2px solid rgba(0, 0, 255, 0.12);
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Footer paragraph */
+footer p {
+  margin-bottom: 8px;
+}
+
+/* ---------- SOCIAL MEDIA ICONS ---------- */
+.social-media-icons {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
 .social-media-icons img {
-  width: 40px;
-  height: 40px;
-  margin: 0 10px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  transition: transform 0.2s ease;
 }
 
-
-/* Remove link underline from social media */
-.socialmedia a {
-  text-decoration: none;
+.social-media-icons img:hover {
+  transform: scale(1.1); /* slight zoom on hover */
 }
-
-/* Logo */
-.logo img {
-  width: 120px;
-  height: auto;
-}
-

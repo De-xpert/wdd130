@@ -115,14 +115,24 @@ h2,h3{
   font-family:var(--heading-font);
 }
 
-/* Main / Footer / Socials (kept minimal) */
-main {width:840px;margin:20px auto;padding:10px}
-footer {width:840px;margin:20px auto;padding:15px 0;border-top:2px solid rgba(0,0,255,0.12);text-align:center}
-
-.socialmedia {display:flex;justify-content:center;gap:10px;margin-top:8px}
-.socialmedia a {
+/* Social media links — remove underlines (validator expects .socialmedia a) */
+.socialmedia a,
+.social-media-icons a {
   text-decoration: none;
+  color: inherit;       /* keeps icon color from being overridden by link color */
+  display: inline-block;/* makes anchors behave predictably around the images */
 }
-.socialmedia img {width:30px;height:30px;transition:transform .2s}
-.socialmedia img:hover {transform:scale(1.1)}
+
+/* Icon sizing + hover (covers both class names) */
+.socialmedia img,
+.social-media-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s ease;
+}
+
+.socialmedia img:hover,
+.social-media-icons img:hover {
+  transform: scale(1.1);
+}
 

@@ -42,12 +42,13 @@ nav ul li a{text-decoration:none;color:blue;font-weight:bold;display:block}
   overflow:hidden;
 }
 
-/* full-width hero image */
-.hero img{
-  display:block;
-  width:100%;
-  max-height:400px;
-  object-fit:cover;
+.hero img {
+  float: right;            /* 👈 This makes the image float to the right */
+  width: 50%;              /* you can adjust to 40%, 60%, etc. */
+  max-height: 400px;
+  object-fit: cover;
+  margin-left: 15px;       /* adds space between image and text */
+  border-radius: 5px;
 }
 
 /* hero H1 bar (top) */

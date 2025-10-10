@@ -329,8 +329,8 @@ footer {
   display: flex;
   justify-content: space-between; /* text left, icons right */
   align-items: center;
-  background-color: #f0f0f0;
-  color: white;
+  background-color: #fff;
+  color: darkblue;
   padding: 1rem 2rem;
   margin-top: 2rem;
   border-top: 3px solid steelblue;

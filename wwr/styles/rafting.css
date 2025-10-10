@@ -167,6 +167,67 @@ nav ul li a{text-decoration:none;color:blue;font-weight:bold;display:block}
   margin-right:12px;
 }
 
+
+/* ===== Adventures Section ===== */
+.adventures {
+  text-align: center;
+  margin: 3rem auto;
+  max-width: 1200px;
+  padding: 1rem;
+}
+
+.adventures h2 {
+  color: darkblue;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  border-bottom: 3px solid darkblue;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+/* Gallery layout */
+.adventure-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+/* Figure styling */
+.adventure-gallery figure {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 220px; /* prevents images from becoming oversized */
+  transition: transform 00.2s ease, box-shadow 0.2s ease;
+}
+
+.adventure-gallery figure:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+.adventure-gallery img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Caption styling */
+.adventure-gallery figcaption {
+  background-color: #fff;
+  color: darkblue;
+  font-weight: 600;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+
 /* Headings below hero */
 h2,h3{
   text-align:center;
@@ -260,5 +321,55 @@ h2,h3{
   .history-grid img {
     margin: 1rem auto;
     width: 80%;
+  }
+}
+
+/* ===== Footer ===== */
+footer {
+  display: flex;
+  justify-content: space-between; /* text left, icons right */
+  align-items: center;
+  background-color: #f0f0f0
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  border-top: 3px solid steelblue;
+}
+
+/* Footer text */
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Social links section */
+footer .social-links {
+  display: flex;
+  gap: 1rem; /* space between icons */
+}
+
+/* Social media images */
+footer .social-links img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+/* Hover effect */
+footer .social-links img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive stacking (for very small screens) */
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .social-links {
+    margin-top: 0.5rem;
+    justify-content: center;
   }
 }

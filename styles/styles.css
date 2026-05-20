@@ -14,12 +14,12 @@ aside {
 }
 
 aside image {
-    width: 200px;
+    width: 200%;
     height: auto;
 }
 
 main image {
-    width: 150px;
+    width: 10%;
     height: auto;
 }
 

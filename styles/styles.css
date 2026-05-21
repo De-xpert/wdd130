@@ -5,6 +5,12 @@ nav {
     color: white;
 }
 
+nav a {
+    color: #000;
+    padding: auto;
+    display: block;
+}
+
 main {
     max-width: 840px;
 }

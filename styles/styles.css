@@ -1,5 +1,16 @@
+nav {
+    background-color: #333;
+    padding: 10px;
+    display: block;
+    color: white;
+}
+
 main {
     max-width: 840px;
+}
+
+h1 {
+    color: #000;
 }
 
 aside {
@@ -14,17 +25,20 @@ aside {
 }
 
 aside img {
-    width: 200%;
+    width: 200px;
     height: auto;
 }
 
 main img {
     width: 10%;
     height: auto;
+    border: #000;
+    padding: 1rem;
+    box-shadow: 0 15px rgba (0, 0, 0, 0.15);
 }
 
 p {
-    padding 10px
+    padding: 0;
 }
 
 footer {

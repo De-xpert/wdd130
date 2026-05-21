@@ -5,7 +5,7 @@ main {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(0 0 / 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     /* 1 */
     padding: 1rem;
     background-color: #eee;
@@ -13,18 +13,18 @@ aside {
     text-align: center;
 }
 
-aside image {
+aside img {
     width: 200%;
     height: auto;
 }
 
-main image {
+main img {
     width: 10%;
     height: auto;
 }
 
 p {
-    padding
+    padding 10px
 }
 
 footer {

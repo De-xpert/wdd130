@@ -19,7 +19,17 @@ body {
     color: var(--primary-color);
 }
 
-header,
+header {
+    background-color: #d9c9f0;
+    border: 1px solid #999;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+
+}
+
 main,
 footer {
     width: 840px;

@@ -119,13 +119,14 @@ section {
 }
 
 .history-content {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 250px 1fr;
     align-items: center;
     gap: 20px;
 }
 
 .history-content img {
-    width: 200px;
+    width: 250px;
     height: auto;
 }
 
@@ -141,6 +142,7 @@ section p {
 .adventure-gallery {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 15px;
 }
 
@@ -151,7 +153,7 @@ section p {
 .adventure-gallery img {
     width: 120px;
     height: 120px;
-    object-fit: cover;
+
 }
 
 footer {
@@ -165,6 +167,7 @@ footer {
 .socialmedia {
     display: flex;
     gap: 10px;
+    margin-left: auto;
 }
 
 .socialmedia a {

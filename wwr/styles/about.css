@@ -63,9 +63,9 @@ header {
 
 nav ul {
     display: flex;
-    gap: 50px;
-    margin: 0;
-    padding: 0;
+    gap: 0px;
+    list-style: none;
+    justify-content: center;
     list-style: none;
 }
 
@@ -74,9 +74,11 @@ nav ul li {
 }
 
 nav ul li a {
+    display: block;
+    background: white;
+    color: black border: 1px solid #999;
     text-decoration: none;
-    color: var(--secondary-color);
-    font-weight: bold;
+    padding: 15px 30px;
 }
 
 .hero {

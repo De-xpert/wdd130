@@ -1,0 +1,149 @@
+:root {
+    --primary-color: #555;
+    --secondary-color: #d9c5f5;
+    --heading-font: Arial, Helvetica, sans-serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--primary-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--secondary-color);
+    border: 1px solid #777;
+    padding: 20px;
+    min-height: 170px;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+header nav {
+    display: block;
+}
+
+header nav a {
+    display: block;
+    margin-bottom: 10px;
+    color: #3973a8;
+}
+
+main {
+    margin-top: 15px;
+}
+
+.hero {
+    position: relative;
+    border: 1px solid #555;
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 15px;
+    width: 100%;
+
+    text-align: center;
+
+    font-family: var(--heading-font);
+    font-size: 24px;
+    font-weight: normal;
+
+    color: #222;
+}
+
+.hero article {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 15px;
+
+    min-height: 100px;
+
+    padding: 15px;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #777;
+}
+
+.hero article img {
+    float: right;
+    width: 80px;
+    height: 80px;
+    margin-left: 15px;
+}
+
+.hero article p {
+    line-height: 1.5;
+}
+
+section {
+    margin-top: 15px;
+    padding: 15px;
+
+    min-height: 120px;
+
+    border: 1px solid #777;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+section p {
+    line-height: 1.5;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 15px;
+    padding: 15px 20px;
+
+    background-color: var(--secondary-color);
+    border: 1px solid #777;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 35px;
+    height: 35px;
+}
